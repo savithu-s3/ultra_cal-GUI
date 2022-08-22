@@ -36,8 +36,8 @@ public class Ultra_Cal extends javax.swing.JFrame {
         Volume = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ultra Cal");
         setBackground(new java.awt.Color(51, 51, 51));
-        setPreferredSize(new java.awt.Dimension(400, 400));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -60,6 +60,11 @@ public class Ultra_Cal extends javax.swing.JFrame {
         Area.setText("Area");
         Area.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Area.setPreferredSize(new java.awt.Dimension(50, 25));
+        Area.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AreaMouseClicked(evt);
+            }
+        });
         Area.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AreaActionPerformed(evt);
@@ -69,6 +74,11 @@ public class Ultra_Cal extends javax.swing.JFrame {
         Perimeter.setText("Perimeter & Circumference");
         Perimeter.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Perimeter.setPreferredSize(new java.awt.Dimension(50, 25));
+        Perimeter.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PerimeterMouseClicked(evt);
+            }
+        });
         Perimeter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PerimeterActionPerformed(evt);
@@ -78,6 +88,11 @@ public class Ultra_Cal extends javax.swing.JFrame {
         Volume.setText("Volume");
         Volume.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Volume.setPreferredSize(new java.awt.Dimension(50, 25));
+        Volume.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                VolumeMouseClicked(evt);
+            }
+        });
         Volume.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VolumeActionPerformed(evt);
@@ -129,7 +144,7 @@ public class Ultra_Cal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -146,6 +161,24 @@ public class Ultra_Cal extends javax.swing.JFrame {
     private void VolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VolumeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_VolumeActionPerformed
+
+    private void AreaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AreaMouseClicked
+        Area area = new Area();
+        area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_AreaMouseClicked
+
+    private void PerimeterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PerimeterMouseClicked
+        Perimeter perimeter = new Perimeter();
+        perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_PerimeterMouseClicked
+
+    private void VolumeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VolumeMouseClicked
+        Volume volume = new Volume();
+        volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_VolumeMouseClicked
 
     /**
      * @param args the command line arguments
