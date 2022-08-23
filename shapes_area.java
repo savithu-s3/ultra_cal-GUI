@@ -39,7 +39,6 @@ public class shapes_area extends javax.swing.JFrame {
         hexagon = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 400));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -60,10 +59,25 @@ public class shapes_area extends javax.swing.JFrame {
         Topic.setText("Area > Shapes");
 
         square.setText("Square");
+        square.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                squareMouseClicked(evt);
+            }
+        });
 
         oval.setText("Oval");
+        oval.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ovalMouseClicked(evt);
+            }
+        });
 
         rectangle.setText("Rectangle");
+        rectangle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rectangleMouseClicked(evt);
+            }
+        });
         rectangle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rectangleActionPerformed(evt);
@@ -71,14 +85,34 @@ public class shapes_area extends javax.swing.JFrame {
         });
 
         circle.setText("Circle");
+        circle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                circleMouseClicked(evt);
+            }
+        });
 
-        pentagon.setText("Eq. Pentagon");
+        pentagon.setText("Rg. Pentagon");
         pentagon.setPreferredSize(new java.awt.Dimension(100, 23));
+        pentagon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pentagonMouseClicked(evt);
+            }
+        });
 
         triangle.setText("Triangle");
         triangle.setPreferredSize(new java.awt.Dimension(100, 23));
+        triangle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                triangleMouseClicked(evt);
+            }
+        });
 
-        hexagon.setText("Eq. Hexagon");
+        hexagon.setText("Rg. Hexagon");
+        hexagon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hexagonMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -151,6 +185,48 @@ public class shapes_area extends javax.swing.JFrame {
     private void rectangleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rectangleActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rectangleActionPerformed
+
+    private void squareMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_squareMouseClicked
+        square_area square_area = new square_area();
+        square_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_squareMouseClicked
+
+    private void rectangleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rectangleMouseClicked
+        rectangle_area rectangle_area = new rectangle_area();
+        rectangle_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_rectangleMouseClicked
+
+    private void triangleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_triangleMouseClicked
+        triangle_area triangle_area = new triangle_area();
+        triangle_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_triangleMouseClicked
+
+    private void circleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_circleMouseClicked
+        circle_area circle_area = new circle_area();
+        circle_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_circleMouseClicked
+
+    private void hexagonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hexagonMouseClicked
+        hexagon_area hexagon_area = new hexagon_area();
+        hexagon_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_hexagonMouseClicked
+
+    private void pentagonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pentagonMouseClicked
+        pentagon_area pentagon_area = new pentagon_area();
+        pentagon_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_pentagonMouseClicked
+
+    private void ovalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ovalMouseClicked
+        oval_area oval_area = new oval_area();
+        oval_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_ovalMouseClicked
 
     /**
      * @param args the command line arguments
