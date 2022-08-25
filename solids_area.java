@@ -38,7 +38,6 @@ public class solids_area extends javax.swing.JFrame {
         cuboid = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 400));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -58,8 +57,18 @@ public class solids_area extends javax.swing.JFrame {
         Topic.setText("Area > Solids");
 
         sphere.setText("Sphere");
+        sphere.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sphereMouseClicked(evt);
+            }
+        });
 
         tetrahedron.setText("Tetrahedron");
+        tetrahedron.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tetrahedronMouseClicked(evt);
+            }
+        });
         tetrahedron.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tetrahedronActionPerformed(evt);
@@ -68,9 +77,19 @@ public class solids_area extends javax.swing.JFrame {
 
         cylinder.setText("Cylinder");
         cylinder.setPreferredSize(new java.awt.Dimension(100, 23));
+        cylinder.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cylinderMouseClicked(evt);
+            }
+        });
 
         cube.setText("Cube");
         cube.setPreferredSize(new java.awt.Dimension(100, 23));
+        cube.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cubeMouseClicked(evt);
+            }
+        });
         cube.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cubeActionPerformed(evt);
@@ -78,8 +97,18 @@ public class solids_area extends javax.swing.JFrame {
         });
 
         pyramid.setText("Pyramid");
+        pyramid.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pyramidMouseClicked(evt);
+            }
+        });
 
         cuboid.setText("Cuboid");
+        cuboid.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cuboidMouseClicked(evt);
+            }
+        });
         cuboid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cuboidActionPerformed(evt);
@@ -162,6 +191,42 @@ public class solids_area extends javax.swing.JFrame {
     private void cuboidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuboidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cuboidActionPerformed
+
+    private void cubeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cubeMouseClicked
+        cube_area cube_area = new cube_area();
+        cube_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cubeMouseClicked
+
+    private void cuboidMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuboidMouseClicked
+        cuboid_area cuboid_area = new cuboid_area();
+        cuboid_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cuboidMouseClicked
+
+    private void sphereMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sphereMouseClicked
+        sphere_area sphere_area = new sphere_area();
+        sphere_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_sphereMouseClicked
+
+    private void cylinderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cylinderMouseClicked
+        cylinder_area cylinder_area = new cylinder_area();
+        cylinder_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cylinderMouseClicked
+
+    private void pyramidMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pyramidMouseClicked
+        pyramid_area pyramid_area = new pyramid_area();
+        pyramid_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_pyramidMouseClicked
+
+    private void tetrahedronMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tetrahedronMouseClicked
+        tetrahedron_area tetrahedron_area = new tetrahedron_area();
+        tetrahedron_area.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_tetrahedronMouseClicked
 
     /**
      * @param args the command line arguments
