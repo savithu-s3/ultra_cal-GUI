@@ -57,7 +57,7 @@ public class cuboid_area extends javax.swing.JFrame {
 
         Topic.setFont(new java.awt.Font("CaskaydiaCove Nerd Font", 0, 24)); // NOI18N
         Topic.setForeground(new java.awt.Color(255, 255, 255));
-        Topic.setText("Area > Solids > Cube");
+        Topic.setText("Area > Solids > Cuboid");
 
         area_label.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         area_label.setForeground(new java.awt.Color(255, 255, 255));
@@ -108,7 +108,7 @@ public class cuboid_area extends javax.swing.JFrame {
                 .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Topic)
-                .addGap(0, 84, Short.MAX_VALUE))
+                .addGap(0, 56, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)

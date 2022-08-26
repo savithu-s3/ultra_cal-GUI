@@ -153,7 +153,7 @@ public class circle_area extends javax.swing.JFrame {
     private void calculateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calculateMouseClicked
         String radiusStr = input.getText();
         float radius = Float.parseFloat(radiusStr);
-        float area = 2*3.14F*radius;
+        float area = 3.14F*radius*radius;
         answer.setText(Float.toString(area));
     }//GEN-LAST:event_calculateMouseClicked
 
