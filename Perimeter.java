@@ -39,7 +39,6 @@ public class Perimeter extends javax.swing.JFrame {
         hexagon = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 400));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -61,20 +60,55 @@ public class Perimeter extends javax.swing.JFrame {
         Topic.setText("Perimeter");
 
         square.setText("Square");
+        square.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                squareMouseClicked(evt);
+            }
+        });
 
         oval.setText("Oval");
+        oval.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ovalMouseClicked(evt);
+            }
+        });
 
         rectangle.setText("Rectangle");
+        rectangle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rectangleMouseClicked(evt);
+            }
+        });
 
         circle.setText("Circle");
+        circle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                circleMouseClicked(evt);
+            }
+        });
 
-        pentagon.setText("Eq. Pentagon");
+        pentagon.setText("Rg. Pentagon");
         pentagon.setPreferredSize(new java.awt.Dimension(100, 23));
+        pentagon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pentagonMouseClicked(evt);
+            }
+        });
 
         triangle.setText("Eq. Triangle");
         triangle.setPreferredSize(new java.awt.Dimension(100, 23));
+        triangle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                triangleMouseClicked(evt);
+            }
+        });
 
-        hexagon.setText("Eq. Hexagon");
+        hexagon.setText("Rg. Hexagon");
+        hexagon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hexagonMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -139,6 +173,48 @@ public class Perimeter extends javax.swing.JFrame {
         menu.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BackMouseClicked
+
+    private void triangleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_triangleMouseClicked
+        triangle_perimeter triangle_perimeter= new triangle_perimeter();
+        triangle_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_triangleMouseClicked
+
+    private void squareMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_squareMouseClicked
+        square_perimeter square_perimeter= new square_perimeter();
+        square_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_squareMouseClicked
+
+    private void rectangleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rectangleMouseClicked
+        rectangle_perimeter rectangle_perimeter= new rectangle_perimeter();
+        rectangle_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_rectangleMouseClicked
+
+    private void pentagonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pentagonMouseClicked
+        pentagon_perimeter pentagon_perimeter= new pentagon_perimeter();
+        pentagon_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_pentagonMouseClicked
+
+    private void hexagonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hexagonMouseClicked
+        hexagon_perimeter hexagon_perimeter= new hexagon_perimeter();
+        hexagon_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_hexagonMouseClicked
+
+    private void circleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_circleMouseClicked
+        circle_perimeter circle_perimeter= new circle_perimeter();
+        circle_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_circleMouseClicked
+
+    private void ovalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ovalMouseClicked
+        oval_perimeter oval_perimeter= new oval_perimeter();
+        oval_perimeter.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_ovalMouseClicked
 
     /**
      * @param args the command line arguments
