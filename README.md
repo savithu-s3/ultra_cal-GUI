@@ -18,6 +18,10 @@ If you have Java installed in your computer you can run the file,
 
 👆Click above to open github repo file👆
 
+***before you run make sure you have all the files in one directory!***
+
+currently thers's no .exe file to run this program
+
 ---
 
 # <font style="color:#F9C669" face="CaskaydiaCove NF">Features</font>📃
@@ -55,18 +59,16 @@ If you have Java installed in your computer you can run the file,
   - Pyramid
   - Cylinder
 
-5. <font size="4">Saves history automatically</font>
-6. <font size="4">Clear history by a command</font>
-7. <font size="4">Colorful interface</font>
-8. <font size="4">Can copy answer after calculating</font>
-9. <font size="4">Prints the current version</font>
-
 <font face="CaskaydiaCove NF">More features coming soon...!</font>
+
+---
 
 # <font style="color:#F9C669" face="CaskaydiaCove NF">Links</font>👇
 
 - Java File (repo)👇
   - ```https://github.com/savithu-s3/ultra_cal-GUI/blob/main/Ultra_Cal.java```
+
+---
 
 # <font style="color:#F9C669" face="CaskaydiaCove NF">Social Media</font>👥
 
