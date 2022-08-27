@@ -2,8 +2,8 @@
 
 <p align="center">
 <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/savithu-s3/ultra_cal-GUI?logo=github&color=red">
-<img alt="GitHub" src="https://img.shields.io/github/license/savithu-s3/ultra_cal-GUI?logo=github&color=orange">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/savithu-s3/ultra_cal-GUI?logo=github&color=yellow">
+<img alt="GitHub" src="https://img.shields.io/github/license/savithu-s3/ultra_cal-GUI?color=orange&logo=github">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/savithu-s3/ultra_cal-GUI?color=yellow&logo=github">
 <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/savithu-s3/ultra_cal-GUI/main?logo=github&color=brightgreen">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/savithu-s3/ultra_cal-GUI?logo=github&color=blue">
 </p>
