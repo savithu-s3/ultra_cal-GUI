@@ -38,7 +38,6 @@ public class Volume extends javax.swing.JFrame {
         pyramid = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 400));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -60,6 +59,11 @@ public class Volume extends javax.swing.JFrame {
         });
 
         cuboid.setText("Cuboid");
+        cuboid.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cuboidMouseClicked(evt);
+            }
+        });
         cuboid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cuboidActionPerformed(evt);
@@ -67,8 +71,18 @@ public class Volume extends javax.swing.JFrame {
         });
 
         sphere.setText("Sphere");
+        sphere.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sphereMouseClicked(evt);
+            }
+        });
 
         tetrahedron.setText("Tetrahedron");
+        tetrahedron.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tetrahedronMouseClicked(evt);
+            }
+        });
         tetrahedron.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tetrahedronActionPerformed(evt);
@@ -77,9 +91,19 @@ public class Volume extends javax.swing.JFrame {
 
         cylinder.setText("Cylinder");
         cylinder.setPreferredSize(new java.awt.Dimension(100, 23));
+        cylinder.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cylinderMouseClicked(evt);
+            }
+        });
 
         cube.setText("Cube");
         cube.setPreferredSize(new java.awt.Dimension(100, 23));
+        cube.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cubeMouseClicked(evt);
+            }
+        });
         cube.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cubeActionPerformed(evt);
@@ -87,6 +111,11 @@ public class Volume extends javax.swing.JFrame {
         });
 
         pyramid.setText("Pyramid");
+        pyramid.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pyramidMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -166,6 +195,42 @@ public class Volume extends javax.swing.JFrame {
     private void tetrahedronActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tetrahedronActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tetrahedronActionPerformed
+
+    private void cubeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cubeMouseClicked
+        cube_volume cube_volume = new cube_volume();
+        cube_volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cubeMouseClicked
+
+    private void cuboidMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuboidMouseClicked
+        cuboid_volume cuboid_volume = new cuboid_volume();
+        cuboid_volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cuboidMouseClicked
+
+    private void sphereMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sphereMouseClicked
+        sphere_volume sphere_volume = new sphere_volume();
+        sphere_volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_sphereMouseClicked
+
+    private void cylinderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cylinderMouseClicked
+        cylinder_volume cylinder_volume = new cylinder_volume();
+        cylinder_volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cylinderMouseClicked
+
+    private void pyramidMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pyramidMouseClicked
+        pyramid_volume pyramid_volume = new pyramid_volume();
+        pyramid_volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_pyramidMouseClicked
+
+    private void tetrahedronMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tetrahedronMouseClicked
+        tetrahedron_volume tetrahedron_volume = new tetrahedron_volume();
+        tetrahedron_volume.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_tetrahedronMouseClicked
 
     /**
      * @param args the command line arguments
